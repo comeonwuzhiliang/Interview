@@ -7,6 +7,10 @@ namespace Zack.Interview.Collection
         // 两个集合交集问题（不使用双层循环）
         public static IEnumerable<T> TwoCollectionIntersection<T>([NotNull] this IEnumerable<T> arr1, [NotNull] IEnumerable<T> arr2) where T : notnull
         {
+            if (!arr1.Any() || !arr2.Any())
+            {
+                yield break;
+            }
             // 定义一个字典,将数据的元素当成字典的Key
             IDictionary<T, bool> arr1Dic = new Dictionary<T, bool>();
             foreach (var item in arr1)
