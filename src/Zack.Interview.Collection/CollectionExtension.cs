@@ -28,5 +28,50 @@ namespace Zack.Interview.Collection
                 }
             }
         }
+
+        public static int DuplicateCollectionGrouping(this int[] arr, int sumMax)
+        {
+            // 计算前缀和
+            var prefixSums = new int[arr.Length];
+
+            prefixSums[0] = arr[0];
+
+            for (var i = 1; i < arr.Length; i++)
+            {
+                prefixSums[i] = prefixSums[i - 1] + arr[i];
+            }
+
+            int groupNumber = 0;
+
+            //利用滑动窗口的思路来计算
+            int left = 0;
+            int right = 0;
+
+            while (right < arr.Length)
+            {
+                if (GetSum(left, right) <= sumMax)
+                {
+                    right++;
+                }
+                else
+                {
+                    left = right;
+                    groupNumber++;
+                }
+            }
+
+            return groupNumber + 1;
+
+            //返回arr[from] + arr[from+1] + .... + arr[to]
+            int GetSum(int from, int to)
+            {
+                if (from == 0)
+                {
+                    return prefixSums[to];
+                }
+
+                return prefixSums[to] - prefixSums[from - 1];
+            }
+        }
     }
 }
