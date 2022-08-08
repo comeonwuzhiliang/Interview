@@ -7,9 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E8B92F2-61B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{92276FB9-F17A-46E2-A5FD-DC769C4145FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zack.Interview.Collection", "src\Zack.Interview.Collection\Zack.Interview.Collection.csproj", "{C06F60BD-A45D-413F-B406-7240FFFD6E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zack.Interview.Collection", "src\Zack.Interview.Collection\Zack.Interview.Collection.csproj", "{C06F60BD-A45D-413F-B406-7240FFFD6E40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zack.Interview.Collection.Test", "test\Zack.Interview.Collection.Test\Zack.Interview.Collection.Test.csproj", "{C910F101-59A8-4968-A3D3-19A0092DD2A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zack.Interview.Collection.Test", "test\Zack.Interview.Collection.Test\Zack.Interview.Collection.Test.csproj", "{C910F101-59A8-4968-A3D3-19A0092DD2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zack.Interview.MassData", "src\Zack.Interview.MassData\Zack.Interview.MassData.csproj", "{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zack.Interview.MassData.Test", "test\Zack.Interview.MassData\Zack.Interview.MassData.Test.csproj", "{98B7161E-8243-453A-964D-29FB11550ABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{C910F101-59A8-4968-A3D3-19A0092DD2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C910F101-59A8-4968-A3D3-19A0092DD2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C910F101-59A8-4968-A3D3-19A0092DD2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B7161E-8243-453A-964D-29FB11550ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B7161E-8243-453A-964D-29FB11550ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B7161E-8243-453A-964D-29FB11550ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B7161E-8243-453A-964D-29FB11550ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C06F60BD-A45D-413F-B406-7240FFFD6E40} = {2E8B92F2-61B5-4A65-A346-5B3C4F7518D1}
 		{C910F101-59A8-4968-A3D3-19A0092DD2A8} = {92276FB9-F17A-46E2-A5FD-DC769C4145FE}
+		{0DD16BFB-DE48-4063-AF59-34EECBBEE3C7} = {2E8B92F2-61B5-4A65-A346-5B3C4F7518D1}
+		{98B7161E-8243-453A-964D-29FB11550ABB} = {92276FB9-F17A-46E2-A5FD-DC769C4145FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {741A3AE2-C52E-49BB-8959-69B394B1BE40}

@@ -64,5 +64,12 @@ namespace Zack.Interview.Collection.Test
             Assert.True(intersection.First() == 4 && intersection.Last() == 5);
         }
 
+        [Fact(DisplayName = "集合分组")]
+        public void DuplicateCollectionGrouping()
+        {
+            var arr = new int[] { 1, 2, 3, 4, 5, 6, 5, 5, 4 };
+            var groupNumbers = arr.DuplicateCollectionGrouping(10);
+        }
+
     }
 }
